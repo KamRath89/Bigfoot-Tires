@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF=8" />
+    <title>Bigfoot Tires | Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/Tire_Logo.png" width="125px" />
+          </div>
+          <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/products.html">Products</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/signin.html">Sign In</a></li>  
+            </ul>
+          </nav>
+          <img src="images/shoppingcart.png" width="30px" height="30px" />
+        </div>
+      </div>
+    </div>
+
+    <!-- sign in -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/bigtires.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download The App</h3>
+          <p>Download App for Apple and Android Devices.</p>
+          <div class="app-logo">
+            <img src="images/googlestore.png" />
+            <img src="images/appstore.png" />
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <h3>Return Policy</h3>
+        </div>
+        <div class="footer-col-3">
+          <h3>Follow Us At</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
