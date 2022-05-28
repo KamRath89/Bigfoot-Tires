@@ -2,21 +2,24 @@ import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Signin = () => {
-
   var LoginForm = document.getElementById("LoginForm");
   var RegForm = document.getElementById("RegForm");
   var Indicator = document.getElementById("Indicator");
 
-  function login(){
-    RegForm.style.transform = "translateX(300px)";
-    LoginForm.style.transform = "translateX(300px)";
-    Indicator.style.transform = "translateX(0px)";
-};
+  function register() {
+    // RegForm.style.transform = "translateX(0px)";
+    // LoginForm.style.transform = "translateX(0px)";
+    // Indicator.style.transform = "translateX(100px)";
+  }
+
+  function login() {
+    // RegForm.style.transform = "translateX(300px)";
+    // LoginForm.style.transform = "translateX(300px)";
+    // Indicator.style.transform = "translateX(0px)";
+  }
 
   return (
-    
     <div className="account-page">
-      <p>TEST</p>
       <div className="container">
         <div className="row">
           <div className="col-2">
@@ -25,10 +28,11 @@ const Signin = () => {
           <div className="col-2">
             <div className="form-container">
               <div className="form-btn">
-                <span onClick={login()}>Login</span>
-                <span onclick="register()">Register</span>
+          {/*      <span onClick={login()}>Login</span>     */}
+                <span onClick={register()}>Register</span>
                 <hr id="Indicator" />
               </div>
+          {/*              
               <form id="LoginForm">
                 <input type="text" placeholder="Username" />
                 <input type="password" placeholder="Password" />
@@ -37,7 +41,10 @@ const Signin = () => {
                 </button>
                 <a href="">Forgot Password</a>
               </form>
+          */}
               <form id="RegForm">
+                <input type="firstName" placeholder="First Name" />
+                <input type="lastName" placeholder="Last tName" />
                 <input type="text" placeholder="Username" />
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
@@ -53,4 +60,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;  
+export default Signin;

@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "All Season XR410",
+        "image": "./assets/images/allseasontire.webp",
+        "price": "$100.00",
+        "link": ""
+    },
+    {
+        "id": 2,
+        "name": "Off Road Super Beast 9000",
+        "image": "./assets/images/allterraintire.webp",
+        "price": "$160.00",
+        "link": ""
+    },
+    {
+        "id": 3,
+        "name": "Heavy Duty Commercial Truck Tire",
+        "image": "./assets/images/commercialtire.png",
+        "price": "$200.00",
+        "link": ""
+    },
+    {
+        "id": 4,
+        "name": "All Season Street Tire F410",
+        "image": "./assets/images/streettire.jpg",
+        "price": "$129.00",
+        "link": ""
+    },
+    {
+        "id": 5,
+        "name": "All Terrain Super 4x4 Jeep Tire",
+        "image": "./assets/images/jeeptire.jpg",
+        "price": "$155.00",
+        "link": ""
+    },
+    {
+        "id": 6,
+        "name": "Off Road KO21 All Terrain Tire",
+        "image": "./assets/images/offroadtire.jpg",
+        "price": "$178.00",
+        "link": ""
+    },
+    {
+        "id": 7,
+        "name": "Falcon 550",
+        "image": "./assets/images/esrdtujskytxkg.webp",
+        "price": "$165.00",
+        "link": ""
+    },
+    {
+        "id": 8,
+        "name": "Trailer/Cart Tires",
+        "image": "./assets/images/syfmkfgxjvn.jpg",
+        "price": "$75.00",
+        "link": ""
+    },
+    {
+        "id": 9,
+        "name": "Defender",
+        "image": "./assets/images/esdh.png",
+        "price": "$350.00",
+        "link": ""
+    },
+    {
+        "id": 10,
+        "name": "Tractor Tires",
+        "image": "./assets/images/71DmlfWoNoL._AC_SY355_.jpg",
+        "price": "$400.00",
+        "link": ""
+    }
+]
