@@ -5,13 +5,15 @@ const Contact = () => {
     return (
        <div>
 
-       <div class="contact">
-      <div class="contact-info">
-        <h3 class="contact-info__header">Talk to us</h3>
-        <div class="contact-info__info-line">
-          <a href="mailto:Bigfoottires.com">833-Bigfoottires.com</a>
+       <div className="contact">
+      <div className="contact-info">
+        <h3 className="contact-info__header">Talk to us</h3>
+        <br></br>
+        <div className="contact-info__info-line">
+          <a href="mailto:Bigfoottires.com">Bigfoottires@gmail.com</a>
         </div>
-        <div class="contact-info__info-line contact-info__phone">
+        <br></br>
+        <div className="contact-info__info-line contact-info__phone">
           <span>833-Bigfoottires</span>
         </div>
       </div>

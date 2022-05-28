@@ -2,11 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+    //functionality here...
+    
     return (
-        <div class="header">
-            <div class="container">
-                <div class="navbar">
-                    <div class="logo">
+        <div className="header">
+            <div className="container">
+                <div className="navbar">
+                    <div className="logo">
                         <img src="./assets/images/Tire_Logo.png" width="125px" alt='' />
                     </div>
                     <nav>
@@ -17,7 +20,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/product1">
+                                <Link to="/products">
                                     Products
                                 </Link>
                             </li>
