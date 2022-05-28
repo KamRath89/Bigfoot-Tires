@@ -42,15 +42,18 @@ const Signin = () => {
                 <a href="">Forgot Password</a>
               </form>
           */}
-              <form id="RegForm">
-                <input type="firstName" placeholder="First Name" />
-                <input type="lastName" placeholder="Last tName" />
-                <input type="text" placeholder="Username" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button type="submit" className="btn">
-                  Register
-                </button>
+              <form id="RegForm" action="/action_page.php" method="get">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" />
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" />
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" />
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" />
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" />
+                <button type="submit" className="btn" value="Submit">Register</button>
               </form>
             </div>
           </div>

@@ -8,3 +8,13 @@
         <span>&#10137;</span>
       </div>
 
+              <form id="RegForm">
+                <input type="firstName" placeholder="First Name" />
+                <input type="lastName" placeholder="Last tName" />
+                <input type="text" placeholder="Username" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button type="submit" className="btn">
+                  Register
+                </button>
+              </form>
