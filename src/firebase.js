@@ -3,13 +3,12 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD_6TwOdlZbhajQOd7RCFLFfG1Zo90wsao",
-  authDomain: "bigfoot-tires.firebaseapp.com",
-  projectId: "bigfoot-tires",
-  storageBucket: "bigfoot-tires.appspot.com",
-  messagingSenderId: "844723704146",
-  appId: "1:844723704146:web:b167eee0c480bcdff9ea8b",
-  measurementId: "G-SEP7KTWRDS"
+  apiKey: "AIzaSyB2Zcx6Cy17FnSYrmoktfmx3WAPSJS9jig",
+  authDomain: "bigfoot-tires-cbc36.firebaseapp.com",
+  projectId: "bigfoot-tires-cbc36",
+  storageBucket: "bigfoot-tires-cbc36.appspot.com",
+  messagingSenderId: "802310706750",
+  appId: "1:802310706750:web:355ded2a79236680af636f"
 };
 
 // Initialize Firebase

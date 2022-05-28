@@ -1,59 +1,62 @@
-import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import React, { useRef } from "react";
+import { firestore } from "../firebase";
+import { addDoc, collection } from "@firebase/firestore";
 
-const Signin = () => {
-  var LoginForm = document.getElementById("LoginForm");
-  var RegForm = document.getElementById("RegForm");
-  var Indicator = document.getElementById("Indicator");
+export default function Signin() {
+  const firstNameRef = useRef();
+  const lastNameRef = useRef();
+  const usernameRef = useRef();
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const ref = collection(firestore, "users");
 
-  function register() {
-    // RegForm.style.transform = "translateX(0px)";
-    // LoginForm.style.transform = "translateX(0px)";
-    // Indicator.style.transform = "translateX(100px)";
-  }
+  const handleSave = async (e) => {
+    e.preventDefault();
+    console.log(firstNameRef.current.value);
+    console.log(lastNameRef.current.value);
+    console.log(usernameRef.current.value);
+    console.log(emailRef.current.value);
+    console.log(passwordRef.current.value);
 
-  function login() {
-    // RegForm.style.transform = "translateX(300px)";
-    // LoginForm.style.transform = "translateX(300px)";
-    // Indicator.style.transform = "translateX(0px)";
-  }
+    let data = {
+      firstName: firstNameRef.current.value,
+      lastName: lastNameRef.current.value,
+      username: usernameRef.current.value,
+      email: emailRef.current.value,
+      password: passwordRef.current.value
+    };
 
+    try {
+      addDoc(ref, data);
+    } catch (e) {
+      console.log(e);
+    }
+  };
   return (
     <div className="account-page">
       <div className="container">
         <div className="row">
           <div className="col-2">
-            <img src="./assets/images/bigtires.png" width="100%" />
-          </div>
-          <div className="col-2">
-            <div className="form-container">
-              <div className="form-btn">
-          {/*      <span onClick={login()}>Login</span>     */}
-                <span onClick={register()}>Register</span>
+            <img src="./assets/images/bigtires.png" width="100%" alt=""/>
+            </div>
+            <div className="col-2">
+              <div className="form-container">
+              <h4>Register</h4>
                 <hr id="Indicator" />
-              </div>
-          {/*              
-              <form id="LoginForm">
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <button type="submit" className="btn">
-                  Login
-                </button>
-                <a href="">Forgot Password</a>
-              </form>
-          */}
-              <form id="RegForm" action="/action_page.php" method="get">
+              <form id="RegForm" onSubmit={handleSave}>
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" />
+                <input type="text" ref={firstNameRef} />
                 <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" />
+                <input type="text" ref={lastNameRef} />
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" />
+                <input type="text" ref={usernameRef} />
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" />
+                <input type="text" ref={emailRef} />
                 <label for="password">Password:</label>
-                <input type="text" id="password" name="password" />
-                <button type="submit" className="btn" value="Submit">Register</button>
+                <input type="text" ref={passwordRef} />
+                <button type="submit" className="btn" value="Submit">
+                  Register
+                </button>
               </form>
             </div>
           </div>
@@ -61,6 +64,4 @@ const Signin = () => {
       </div>
     </div>
   );
-};
-
-export default Signin;
+}
